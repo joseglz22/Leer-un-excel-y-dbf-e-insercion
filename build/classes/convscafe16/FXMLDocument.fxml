@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="464.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="convscafe16.FXMLDocumentController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#20c5f5" height="25.0" layoutX="10.0" layoutY="191.0" stroke="#37d3e1" strokeType="INSIDE" width="306.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#20c5f5" height="25.0" layoutX="10.0" layoutY="292.0" stroke="#37d3e1" strokeType="INSIDE" width="306.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#20c5f5" height="25.0" layoutX="10.0" layoutY="93.0" stroke="#37d3e1" strokeType="INSIDE" width="306.0" />
+        <Button fx:id="button" layoutX="18.0" layoutY="401.0" onAction="#generar" text="Generar" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <ComboBox fx:id="bx" layoutX="215.0" layoutY="64.0" onAction="#mostrar" prefHeight="25.0" prefWidth="101.0" />
+      <Label layoutX="56.0" layoutY="68.0" text="Selecciona Condominio" />
+      <DatePicker fx:id="datepicker" layoutX="216.0" layoutY="120.0" prefHeight="25.0" prefWidth="101.0" />
+      <Label layoutX="97.0" layoutY="124.0" text="FECHA :" />
+      <Label layoutX="122.0" layoutY="97.0" prefHeight="17.0" prefWidth="101.0" text="PARAMETRO8" textFill="#f8f8f8">
+         <font>
+            <Font name="MT Extra" size="12.0" />
+         </font></Label>
+      <TextField id="P8A" fx:id="P8A" layoutX="217.0" layoutY="158.0" prefHeight="25.0" prefWidth="101.0" />
+      <TextField id="P45A" fx:id="P45A" layoutX="216.0" layoutY="228.0" prefHeight="7.0" prefWidth="101.0" />
+      <Label layoutX="95.0" layoutY="162.0" text="CIDDOCUM01" />
+      <Label layoutX="122.0" layoutY="195.0" text="PARAMETRO 45" textFill="WHITE" />
+      <Label layoutX="99.0" layoutY="232.0" text="CIDFOLDDIG" />
+      <Label layoutX="100.0" layoutY="262.0" text="CIDDOCTO" />
+      <Label layoutX="122.0" layoutY="296.0" text="PARAMETRO 10" textFill="WHITE" />
+      <Label layoutX="102.0" layoutY="337.0" text="CIDMOVIM01" />
+      <Label layoutX="103.0" layoutY="368.0" text="CIDDOCUM01" />
+      <TextField id="P45B" fx:id="P45B" layoutX="216.0" layoutY="258.0" prefHeight="25.0" prefWidth="101.0" />
+      <TextField id="P10A" fx:id="P10A" layoutX="216.0" layoutY="333.0" prefHeight="25.0" prefWidth="101.0" />
+      <TextField id="P10B" fx:id="P10B" layoutX="216.0" layoutY="364.0" prefHeight="25.0" prefWidth="101.0" />
+      <Button id="borrar" fx:id="borrar" layoutX="121.0" layoutY="401.0" mnemonicParsing="false" onAction="#Borrar1" prefHeight="25.0" prefWidth="76.0" text="Borrar" />
+      <Button id="salir" fx:id="salir" layoutX="249.0" layoutY="401.0" mnemonicParsing="false" onAction="#Salir1" prefHeight="25.0" prefWidth="68.0" text="Salir" />
+      <Label layoutX="329.0" layoutY="71.0" prefHeight="17.0" prefWidth="116.0" text="       IDs Sugeridos" />
+      <Label id="l1" fx:id="l1" layoutX="348.0" layoutY="162.0" prefHeight="17.0" prefWidth="264.0" />
+      <Label id="l2" fx:id="l2" layoutX="348.0" layoutY="232.0" prefHeight="17.0" prefWidth="264.0" />
+      <Label id="l3" fx:id="l3" layoutX="348.0" layoutY="262.0" prefHeight="17.0" prefWidth="264.0" />
+      <Label id="l4" fx:id="l4" layoutX="348.0" layoutY="337.0" prefHeight="17.0" prefWidth="264.0" />
+      <Label id="l5" fx:id="l5" layoutX="348.0" layoutY="368.0" prefHeight="17.0" prefWidth="264.0" />
+      <Label id="prubeal1" fx:id="prubeal1" layoutX="398.0" layoutY="30.0" />
+      <ImageView fitHeight="96.0" fitWidth="184.0" layoutX="533.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Data/src/recurso/logo.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
